@@ -12,19 +12,19 @@ Over 30 transcripts of both debates and town hall appearances were webscraped fr
 Lines were preprocessed for analysis, with punctuation and stopwords removed. Words were then stemmed. The following plots show the word counts for every candidate, and for a select few candidates.
 
 ### Total:
-![total](data/images/total.png)
+![total](images/total.png)
 
 ### Individual Candidates:
 
-![biden](data/images/biden.png)
+![biden](images/biden.png)
 
-![buttigieg](data/images/buttigieg.png)
+![buttigieg](images/buttigieg.png)
 
-![sanders](data/images/sanders.png)
+![sanders](images/sanders.png)
 
 Some Sentiment Analysis was also conducted to detect the general rhetoric of the candidates. Emotions were compared using the NRC Lexicon, involving thousands of words given an association with 8 different emotions as well as a polarity index.
 
-![emotions](data/images/emotions.png)
+![emotions](images/emotions.png)
  Noticeably, negative terms appear much more often than positively associated terms. Anger and fear are common campaign strategies when a party is no longer in the forefront, which is reflected in this analysis.
 
 ### Topic Analysis
@@ -46,13 +46,13 @@ Some Sentiment Analysis was also conducted to detect the general rhetoric of the
 
  The first model attempts to classify Bernie Sanders compared to his fellow candidates. Sanders was chosen due to his previous performance to date of the analysis.
 
- ![speaker](data/images/speakerroc.png)
+ ![speaker](images/speakerroc.png)
 
  Both Logistic Regression and Multinomial Naive Bayes models produced an F1 Score and Precision of .86 with a Recall score of .87.
 
  State Classification performed somewhat worse, but still decent enough results to be confident that some analysis is valid.
 
- ![state](data/images/stateroc.png)
+ ![state](images/stateroc.png)
 
 All three scores - Accuracy, Precision, Recall - were around the .70 mark, which is still a strong result.
 
